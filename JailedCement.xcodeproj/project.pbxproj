@@ -14,6 +14,7 @@
 		D6FCF038297F3F2800F3EEF7 /* JailedCementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FCF037297F3F2800F3EEF7 /* JailedCementTests.swift */; };
 		D6FCF042297F3F2800F3EEF7 /* JailedCementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FCF041297F3F2800F3EEF7 /* JailedCementUITests.swift */; };
 		D6FCF044297F3F2800F3EEF7 /* JailedCementUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FCF043297F3F2800F3EEF7 /* JailedCementUITestsLaunchTests.swift */; };
+		D6FCF052297F425200F3EEF7 /* deadbeef.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FCF051297F425200F3EEF7 /* deadbeef.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,10 @@
 		D6FCF03D297F3F2800F3EEF7 /* JailedCementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JailedCementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FCF041297F3F2800F3EEF7 /* JailedCementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailedCementUITests.swift; sourceTree = "<group>"; };
 		D6FCF043297F3F2800F3EEF7 /* JailedCementUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailedCementUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D6FCF050297F425100F3EEF7 /* JailedCement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JailedCement-Bridging-Header.h"; sourceTree = "<group>"; };
+		D6FCF051297F425200F3EEF7 /* deadbeef.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = deadbeef.m; sourceTree = "<group>"; };
+		D6FCF053297F426B00F3EEF7 /* deadbeef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deadbeef.h; sourceTree = "<group>"; };
+		D6FCF054297F45CA00F3EEF7 /* king_laughter_01.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = king_laughter_01.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +101,12 @@
 			children = (
 				D6FCF026297F3F1E00F3EEF7 /* JailedCementApp.swift */,
 				D6FCF028297F3F1E00F3EEF7 /* ContentView.swift */,
+				D6FCF054297F45CA00F3EEF7 /* king_laughter_01.m4a */,
+				D6FCF051297F425200F3EEF7 /* deadbeef.m */,
+				D6FCF053297F426B00F3EEF7 /* deadbeef.h */,
 				D6FCF02A297F3F2700F3EEF7 /* Assets.xcassets */,
 				D6FCF02C297F3F2700F3EEF7 /* Preview Content */,
+				D6FCF050297F425100F3EEF7 /* JailedCement-Bridging-Header.h */,
 			);
 			path = JailedCement;
 			sourceTree = "<group>";
@@ -195,6 +204,7 @@
 				TargetAttributes = {
 					D6FCF022297F3F1E00F3EEF7 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 					D6FCF032297F3F2700F3EEF7 = {
 						CreatedOnToolsVersion = 14.1;
@@ -259,6 +269,7 @@
 			files = (
 				D6FCF029297F3F1E00F3EEF7 /* ContentView.swift in Sources */,
 				D6FCF027297F3F1E00F3EEF7 /* JailedCementApp.swift in Sources */,
+				D6FCF052297F425200F3EEF7 /* deadbeef.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JailedCement/Preview Content\"";
@@ -432,6 +444,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bomberfish.JailedCement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "JailedCement/JailedCement-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JailedCement/Preview Content\"";
@@ -460,6 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bomberfish.JailedCement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "JailedCement/JailedCement-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
