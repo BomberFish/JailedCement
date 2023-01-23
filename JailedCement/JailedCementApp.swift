@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-print("Hello World")
-
 @main
 struct JailedCementApp: App {
     var body: some Scene {
