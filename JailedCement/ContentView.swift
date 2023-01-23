@@ -13,11 +13,6 @@ struct ContentView: View {
     let path = Bundle.main.path(forResource: "king_laughter_01", ofType: "m4a")
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("unfinifehed app rlol")
-            
             Button(action: {
                 print("Goodbye World")
                 // Heard somewhere this could bootloop
