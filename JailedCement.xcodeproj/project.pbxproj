@@ -15,6 +15,7 @@
 		D6FCF042297F3F2800F3EEF7 /* JailedCementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FCF041297F3F2800F3EEF7 /* JailedCementUITests.swift */; };
 		D6FCF044297F3F2800F3EEF7 /* JailedCementUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FCF043297F3F2800F3EEF7 /* JailedCementUITestsLaunchTests.swift */; };
 		D6FCF052297F425200F3EEF7 /* deadbeef.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FCF051297F425200F3EEF7 /* deadbeef.m */; };
+		D6FCF0562980317200F3EEF7 /* BrickerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FCF0552980317200F3EEF7 /* BrickerFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D6FCF051297F425200F3EEF7 /* deadbeef.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = deadbeef.m; sourceTree = "<group>"; };
 		D6FCF053297F426B00F3EEF7 /* deadbeef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deadbeef.h; sourceTree = "<group>"; };
 		D6FCF054297F45CA00F3EEF7 /* king_laughter_01.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = king_laughter_01.m4a; sourceTree = "<group>"; };
+		D6FCF0552980317200F3EEF7 /* BrickerFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickerFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				D6FCF026297F3F1E00F3EEF7 /* JailedCementApp.swift */,
 				D6FCF028297F3F1E00F3EEF7 /* ContentView.swift */,
+				D6FCF0552980317200F3EEF7 /* BrickerFunctions.swift */,
 				D6FCF054297F45CA00F3EEF7 /* king_laughter_01.m4a */,
 				D6FCF051297F425200F3EEF7 /* deadbeef.m */,
 				D6FCF053297F426B00F3EEF7 /* deadbeef.h */,
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6FCF0562980317200F3EEF7 /* BrickerFunctions.swift in Sources */,
 				D6FCF029297F3F1E00F3EEF7 /* ContentView.swift in Sources */,
 				D6FCF027297F3F1E00F3EEF7 /* JailedCementApp.swift in Sources */,
 				D6FCF052297F425200F3EEF7 /* deadbeef.m in Sources */,

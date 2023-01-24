@@ -7,17 +7,14 @@
 
 import SwiftUI
 import AVKit
+import Foundation
 
 struct ContentView: View {
     @State var audioPlayer = AVAudioPlayer()
     let path = Bundle.main.path(forResource: "king_laughter_01", ofType: "m4a")
     var body: some View {
         VStack {
-            Button(action: {
-                print("Goodbye World")
-                // Heard somewhere this could bootloop
-                plistChange(plistPath: "/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist", key: "ArtworkDeviceSubType", value: 69420)
-            }, label: {Text("Bootlooping time")})
+            Button(action: {brick()}, label: {Text("Bootlooping time")})
             .controlSize(.large)
             .tint(.accentColor)
             .buttonStyle(.bordered)
@@ -37,31 +34,6 @@ struct ContentView: View {
             .buttonStyle(.bordered)
         }
     }
-}
-
-// MARK: - plist editing function
-func plistChange(plistPath: String, key: String, value: Int) {
-let stringsData = try! Data(contentsOf: URL(fileURLWithPath: plistPath))
-
-let plist = try! PropertyListSerialization.propertyList(from: stringsData, options: [], format: nil) as! [String: Any]
-func changeValue(_ dict: [String: Any], _ key: String, _ value: Int) -> [String: Any] {
-    var newDict = dict
-    for (k, v) in dict {
-        if k == key {
-            newDict[k] = value
-        } else if let subDict = v as? [String: Any] {
-            newDict[k] = changeValue(subDict, key, value)
-        }
-    }
-    return newDict
-}
-
-var newPlist = plist
-newPlist = changeValue(newPlist, key, value)
-
-let newData = try! PropertyListSerialization.data(fromPropertyList: newPlist, format: .binary, options: 0)
-
-overwriteFile(newData, plistPath)
 }
 
 
